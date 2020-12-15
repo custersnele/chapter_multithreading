@@ -1,7 +1,6 @@
-package be.pxl.ja.oefening1;
+package be.pxl.ja.oefening3;
 
 import java.io.BufferedWriter;
-import java.io.IOException;
 
 public class BankAccount {
 	private int balance;
