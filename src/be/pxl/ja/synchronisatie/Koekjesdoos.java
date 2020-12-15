@@ -2,7 +2,7 @@ package be.pxl.ja.synchronisatie;
 
 public class Koekjesdoos {
 
-	private Integer aantalKoekjes;
+	private int aantalKoekjes;
 
 	public Koekjesdoos(int aantalKoekjes) {
 		this.aantalKoekjes = aantalKoekjes;
