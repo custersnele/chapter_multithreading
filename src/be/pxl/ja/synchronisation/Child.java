@@ -14,7 +14,7 @@ public class Child extends Thread {
 
 	@Override
 	public void run() {
-		while (cookieBox.neemKoekje()) {
+		while (cookieBox.takeCookie()) {
 			numberOfCookies++;
 			try {
 				Thread.sleep(5);

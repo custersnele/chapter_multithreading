@@ -8,7 +8,7 @@ public class CookieBox {
 		this.numberOfCookies = numberOfCookies;
 	}
 
-	public boolean neemKoekje() {
+	public boolean takeCookie() {
 			if (numberOfCookies > 0) {
 				numberOfCookies--;
 				return true;
