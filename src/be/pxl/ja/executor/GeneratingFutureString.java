@@ -1,10 +1,7 @@
 package be.pxl.ja.executor;
 
 import java.util.Random;
-import java.util.concurrent.Callable;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.Future;
+import java.util.concurrent.*;
 
 public class GeneratingFutureString {
 
@@ -40,7 +37,12 @@ public class GeneratingFutureString {
 		} else {
 			System.out.println("generating letters is running.");
 		}
-		executorService.shutdown();
+        try {
+            System.out.println(result.get());
+        } catch (InterruptedException | ExecutionException e) {
+            throw new RuntimeException(e);
+        }
+        executorService.shutdown();
 	}
 
 }
